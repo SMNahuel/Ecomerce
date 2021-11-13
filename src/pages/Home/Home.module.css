@@ -1,0 +1,80 @@
+.Container{
+    display: flex;
+    flex-direction: row;
+}
+.Decoration{
+    height: 250px;
+    width: 250px;
+    background-color: #E59934;
+    
+    border-radius: 50% 50% 50% 50%;
+    margin-left: -10%;
+    position: fixed;
+}
+.Decoration2{
+    height: 250px;
+    width: 350px;
+    background-color: #E59934;
+    border-radius: 100%;
+    margin-left: -10%;
+    margin-top: 70%;
+}
+.ContainerProducts{
+    margin-top: 5em;
+    width: 100%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+}
+
+.Product{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContainerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border: 2px solid #142f43;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.ContainerImg > img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.ProductInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    background-color: #142f43;
+}
+
+.ProductInfo > p{
+    margin-left: 0.5em;
+}
+
+.ProductInfo > button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.ProductInfo:hover > button{
+    color: gray
+}
